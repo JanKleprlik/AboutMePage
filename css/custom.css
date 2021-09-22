@@ -1,0 +1,23 @@
+.selected {
+    background-color: #d2f4ea;
+}
+
+.bg-light-info {
+    background-color: #0dcaf00c;
+}
+
+.bg-light {
+    background-color: #adb5bd0c;
+}
+
+.bg-light-danger {
+    background-color: #dc35450c;
+}
+
+.bg-light-success {
+    background-color: #20c9970c;
+}
+
+.bd-callout-success {
+    border-left-color: #20c997
+}
