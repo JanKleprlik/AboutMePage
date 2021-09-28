@@ -31,25 +31,12 @@
                             <div class="collapse" id="NPRG030-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><a href="#NPRG030_00" class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse">Obecné informace</a></li>
-                                    <?php
-                                        $file=__DIR__."/NPRG030/data.csv";
-                                        $handle = fopen($file, "r");
-                                        $counter = 0;
-                                        while(!feof($handle)){
-                                            $data = explode(";",fgets($handle));
-                                            if ($counter > 0){
-                                            ?>                                        
-                                    <li><a href=<?php echo "#NPRG030_".$counter?> class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse"><?php echo htmlspecialchars($data[0]);?></a></li>
-                                        <?php
-                                            }
-                                            $counter++;
-                                        }
-                                        fclose($handle);
-                                        ?>
-                                        
-                                        
 
-     
+                                    <li><a href=#NPRG030_1 class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse">1. hodina - 1.10.2021</a></li>
+
+
+
+
                                 </ul>
                             </div>
                         </li>
@@ -60,21 +47,8 @@
                             <div class="collapse" id="NPRG062-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><a href="#NPRG062_00" class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse">Obecné informace</a></li>
-                                    <?php
-                                        $file=__DIR__."/NPRG062/data.csv";
-                                        $handle = fopen($file, "r");
-                                        $counter = 0;
-                                        while(!feof($handle)){
-                                            $data = explode(";",fgets($handle));
-                                            if ($counter > 0){
-                                            ?>                                        
-                                    <li><a href=<?php echo "#NPRG062_".$counter?> class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse"><?php echo htmlspecialchars($data[0]);?></a></li>
-                                        <?php
-                                            }
-                                            $counter++;
-                                        }
-                                        fclose($handle);
-                                        ?>
+
+                                    <li><a href=#NPRG062_1 class="link-dark rounded" role="button" aria-expanded="false" data-bs-toggle="collapse">1. hodina - 1.10.2021</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -122,43 +96,19 @@
                         </p>
                     </div>
 
-                    <?php
-                        if(($open = fopen(__DIR__."/NPRG030/data.csv", "r")) !== FALSE){
-                            while(($data = fgetcsv($open, 1000, ",")) !== FALSE){
-                                $array[] = $data;
-                            }
 
-                            fclose($open);
-                        }
-                        
-                        foreach ($array as $key => $value){
-                            #skip the header of csv file
-                            if ($key < 1) continue;
-
-                            $data = explode(";", $value[0]);
-
-                            $title = $data[0];
-                            $description = $data[1];
-                            $presentation = $data[2];
-                            $homework = $data[3];?>
-
-                            <!-- NPRG030 - hodina -->
-                            <div class="collapse bd-callout bd-callout-info bg-light-info" id=<?php echo "NPRG030_".$key?>>
-                                <h1><?php echo htmlspecialchars($title)?></h1>
-                                <hr>
-                                <p><?php echo htmlspecialchars($description)?></p>
-                                <h3>Prezentace:</h3>
-                                <p><a href=<?php echo "./NPRG030/".htmlspecialchars($presentation)?>>Prezentace</a></p>
-                                <?php if ($homework !== "none"){?>
-                                    <h3>Úkol:</h3>
-                                    <p><?php echo htmlspecialchars($homework)?></p>
-                                <?php } ?>
-                            </div>
+                    <!-- NPRG030 - hodina -->
+                    <div class="collapse bd-callout bd-callout-info bg-light-info" id=NPRG030_1>
+                        <h1>1. hodina - 1.10.2021</h1>
+                        <hr>
+                        <p>TBD</p>
+                        <h3>Prezentace:</h3>
+                        <p><a href=./NPRG030/test.txt>Prezentace</a></p>
+                        <h3>Úkol:</h3>
+                        <p>TBD</p>
+                    </div>
 
 
-                    <?php
-                        }
-                    ?>
                 </div>
 
 
@@ -186,44 +136,19 @@
                         </p>
                     </div>
 
-                    <?php
-                        $array = [];
-                        if(($open = fopen(__DIR__."/NPRG062/data.csv", "r")) !== FALSE){
-                            while(($data = fgetcsv($open, 1000, ",")) !== FALSE){
-                                $array[] = $data;
-                            }
 
-                            fclose($open);
-                        }
-                        
-                        foreach ($array as $key => $value){
-                            #skip the header of csv file
-                            if ($key < 1) continue;
-
-                            $data = explode(";", $value[0]);
-
-                            $title = $data[0];
-                            $description = $data[1];
-                            $presentation = $data[2];
-                            $homework = $data[3];?>
-
-                            <!-- NPRG062 - hodina -->
-                            <div class="collapse bd-callout bd-callout-success bg-light-success" id=<?php echo "NPRG062_".$key?>>
-                                <h1><?php echo htmlspecialchars($title)?></h1>
-                                <hr>
-                                <p><?php echo htmlspecialchars($description)?></p>
-                                <h3>Prezentace:</h3>
-                                <p><a href=<?php echo "./NPRG062/".htmlspecialchars($presentation)?>>Prezentace</a></p>
-                                <?php if ($homework !== "none"){?>
-                                    <h3>Úkol:</h3>
-                                    <p><?php echo htmlspecialchars($homework)?></p>
-                                <?php } ?>
-                            </div>
+                    <!-- NPRG062 - hodina -->
+                    <div class="collapse bd-callout bd-callout-success bg-light-success" id=NPRG062_1>
+                        <h1>1. hodina - 1.10.2021</h1>
+                        <hr>
+                        <p>TBD</p>
+                        <h3>Prezentace:</h3>
+                        <p><a href=./NPRG062/test.txt>Prezentace</a></p>
+                        <h3>Úkol:</h3>
+                        <p>TBD</p>
+                    </div>
 
 
-                    <?php
-                        }
-                    ?>
 
                 </div>
 
