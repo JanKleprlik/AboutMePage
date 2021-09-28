@@ -61,8 +61,8 @@ canvas.height = window.innerHeight;
 
 let particles = [];
 let particleSize = 4;
-let maxParticles = 80;
-let threshold = 70;
+let maxParticles = 100;
+let threshold = 100;
 for (let i = 0; i < maxParticles; i++) {
     let particle = {
         x: Math.random() * canvas.width,
