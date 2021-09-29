@@ -38,8 +38,8 @@ window.addEventListener('resize', () => {
     let canvas = document.getElementById('myCanvas');
     let context = canvas.getContext('2d');
 
-    let oldWidth = canvas.width;
-    let oldHeight = canvas.height;
+    let oldWidth = canvas.width + margin;
+    let oldHeight = canvas.height + margin;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -55,9 +55,10 @@ window.addEventListener('resize', () => {
 
 let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
+let margin = 10;
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth + margin;
+canvas.height = window.innerHeight + margin;
 
 let particles = [];
 let particleSize = 4;
