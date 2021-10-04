@@ -1,11 +1,11 @@
-## Personal website of Jan Kleprlík
+# Personal web page of Jan Kleprlík
 This web page contains information about my past and ongoing projects as well as my programming experience.
 
-##### Link to the web
+## Link to the web
  <https://jankleprlik.github.io/Personal>
 
 
-Credits:
+## Credits:
 
 	Theme:
 		Dimension by HTML5 UP
