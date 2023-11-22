@@ -2,7 +2,7 @@
 This web page contains information about my past and ongoing projects as well as my programming experience.
 
 ## Link to the web
- <https://jankleprlik.github.io/Personal>
+ <https://jankleprlik.github.io/AboutMePage/>
 
 
 ## Credits:
