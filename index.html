@@ -36,6 +36,7 @@
                     <li><a href="#about">About&nbsp;Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#awards">Awards</a></li>
                     <li><a href="./assets/CV_JanKleprlik.pdf" target="_blank">Resume</a></li>
                     <!-- <li><a href="#elements">Elements</a></li> -->
                 </ul>
@@ -49,9 +50,10 @@
             <article id="about">
                 <h2 class="major">About me</h2>
                 <span class="image right main"><img src="images/profile_pic.jpg" alt="Jan Kleprlík" /></span>
-                <p>I currently pursue a master's degree in software systems at Charles University, Prague. I am knowledgeable about algorithms, data structures, and various design patterns. I can efficiently modify and adapt known algorithms to solve unfamiliar
-                    problems. As I think understanding goes miles further than memorizing.</p>
-                <p>My interests lay in compilers and code analysis. As a team player, I have achieved multiple wins in hackathons and as an individual, I have created several music-related applications across multiple platforms.</p>
+                <p>I am in my last year of a master’s degree in software systems at Charles University, Prague. My main interests
+                    are programming languages and their development, emphasising compilation and runtime optimizations via
+                    static analysis techniques. I have repeatedly demonstrated my ability to learn new technologies in multiple
+                    hackathons where I either won or placed at the top positions, both as a team member and an individual.</p>
                 <h3>Contact</h3>
                 <ul class="actions">
                     <li><span class="icon solid fa-phone"></span><a href="tel:+420722072805" target="_blank" style="margin-left: 10px;">+420 722 072 805</a></li>
@@ -59,14 +61,30 @@
                     <li><span class="icon brands fa-github"></span><a href="https://github.com/JanKleprlik" target="_blank" style="margin-left: 10px;">GitHub</a></li>
                     <li><span class="icon brands fa-linkedin"></span><a href="https://www.linkedin.com/in/jankleprlik" target="_blank" style="margin-left: 10px;">LinkedIn</a></li>
                 </ul>
-                <ul class="actions" style="margin-top: -20px;">
+                <!-- <ul class="actions" style="margin-top: -20px;">
                     <li><span class="icon brands fa-twitter"></span><a href="https://twitter.com/Klepiiitko" target="_blank" style="margin-left: 10px;">Twitter</a></li>
-                </ul>
+                </ul> -->
             </article>
 
             <!-- Projects -->
             <article id="projects">
                 <h2 class="major">Projects</h2>
+                <section>
+                    <h3>Cilostazol</h3>
+                    <div class="moveTop"><i>Java</i>&ensp;&ensp;<a href="https://github.com/Softwarovy-projekt/Cilostazol" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></div>
+                    <p><b>CIL interpreter</b> with the performance features and support of <i>GraalVM</i>. The interpreter is written using the <i>Truffle</i> framework using compiler hinting and other optimizations. 
+                        The implementation includes <b>complete parser</b> of compiled C# code, the <b>interpreter</b> specialized for CIL generated from C# code with extensive caching and <b>compiler optimizations</b> enabled by the Truffle framework.</p>
+                    <p>This project was developed in cooperation with <i>Oracle</i> consultants in a group of three students over the course of nine months.</p>
+                </section>
+
+                <section class="align-right">
+                    <h3>Vimal</h3>
+                    <div class="moveTop"><i>C#</i>&ensp;&ensp;<a href="https://github.com/JanKleprlik/Vimal" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></div>
+                    <p>
+                        Simple text editor with <b>syntax highlighting</b> support for <i>Swift</i> and <i>Kotlin</i> programming languages. The editor includes support for <b>execution</b> of <i>Kotlin</i> with embedded <b>console</b> output. 
+                    </p>
+                </section>
+
                 <section>
                     <h3>Yöti</h3>
                     <div class="moveTop"><i>C#</i>&ensp;&ensp;<a href="https://github.com/JanKleprlik/Yoti" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></div>
@@ -124,7 +142,45 @@
 
             <!-- Experience -->
             <article id="experience">
-                <h2 class="major">Experience</h2>
+                <h2 class="major">Experience</h2>   
+                <section>
+                    <h3>Manta, an IBM company</h3>
+                    <p>As a part of my Master’s thesis, I developed and gradually own a complete unit of data lineage platform — C# scanner. This part staticaly analyses compiled C# code - CIL and generates data flow graph. 
+                        My responsibilities include everything from problem analysis, design all the way to ensuring smooth release process. Later my area of expertise extended into static analysis of Python source code.</p>
+                    <ul class="icons">
+                        <li><a href="https://manta.io/" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
+                <section class="align-right">
+                    <h3>JetBrains - AppCode Intern</h3>
+                    <p>Contribution to many language support features for the Swift programming language. Mainly IDE intentions and quick
+                        actions.</p>
+                    <ul class="icons">
+                        <li><a href="https://www.jetbrains.com/" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>JetBrains - Campus Ambassador</h3>
+                    <p>JetBrains representative on the campus, organizing various social events and talks where I posed as an organiser as well as technical speaker across multiple European universities.</p>
+                    <ul class="icons">
+                        <li><a href="https://www.jetbrains.com/" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Instructor at Charles University</h3>
+                    <p>I run algorithm and programming lessons in python at Charles University, Prague.</p>
+                    <ul class="icons">
+                        <li><a href="https://ksvi.mff.cuni.cz/~kleprlik/" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
+                <section class="align-right">
+                    <h3>NetGlade - Backend Developer</h3>
+                    <p>Developing and further expanding school management software actively used by hundreds of schools across the
+                        Czech Republic</p>
+                    <ul class="icons">
+                        <li><a href="https://www.netglade.cz/" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
                 <section>
                     <h3>MDSC</h3>
                     <p>Matfyz Developer Studen Club - I am a founding member of developer student club that servers the purpose of simulating work-like experience while working on larger projects. Our most recent application is <i>Mathletics</i> which is a web sport tracking application used by the faculty of mathematics and physics for distant learning.</p>
@@ -137,6 +193,21 @@
                     <p>I was accountable for content creation of math textbooks for high school students now used by over <b>240</b> schools and <b>30 000</b> across Czechia and Slovakia.</p>
                     <ul class="icons">
                         <li><a href="https://www.prospoluzaky.cz" class="icon solid fa-link"><span class="label">Website</span></a></li>
+                    </ul>
+                </section>
+            </article>
+
+            <article id="awards">
+                <h2 class="major">Awards</h2>
+                <section>
+                    <h3>Scolarship for excelent academic results</h3>
+                    <p>Finished with grade average of 1.07 (1.0 is the best possible).</p>
+                </section>
+                <section class="align-right">
+                    <h3>UnIT Challenge 2023 - Hackathon</h3>
+                    <p>We have developed fully functioning and automatic system for faulty screen and diod recognition in large scale production line displays. <br>Our team placed <b>third</b>.</p>
+                    <ul class="icons">
+                        <li><a href="https://unit.bestprague.cz/" class="icon solid fa-link"><span class="label">Website</span></a></li>
                     </ul>
                 </section>
                 <section>
@@ -162,13 +233,6 @@
                     <p>Global contest of UWP applications and applications created with the <i>UnoPlatform</i> framework. My application <i>Yöti</i> which I created from scratch in the span of nine months placed second in the multiplatform category.</p>
                     <ul class="icons">
                         <li><a href="https://uwpcommunity.com/launch/2021/" class="icon solid fa-link"><span class="label">Website</span></a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Instructor at Charles University</h3>
-                    <p>I run algorithm and programming lessons in python at Charles University, Prague.</p>
-                    <ul class="icons">
-                        <li><a href="https://ksvi.mff.cuni.cz/~kleprlik/" class="icon solid fa-link"><span class="label">Website</span></a></li>
                     </ul>
                 </section>
             </article>
